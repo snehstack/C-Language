@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+#define pf printf
+
+
+main()
+
+
+{
+
+   int a=30;
+
+   clrscr();
+
+
+   pf("%d\n",a++);
+   pf("%d\n",a);
+   pf("%d\n\n",--a);
+   pf("%d %d %d %d\n",++a,a--,a++,++a);
+
+
+   pf("%d",a);
+
+
+   getch();
+
+
+}
