@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
 #define pf printf
-#define sc scanf
-
 
 main()
 
@@ -13,7 +11,8 @@ main()
     clrscr();
 
     pf("Enter Your Age\t:");
-    sc("%d",&age);
+    scanf("%d",&age);
+
     if(age>=18)
     {
 

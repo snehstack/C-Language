@@ -19,17 +19,17 @@ main()
     pf("Enter Third  Number :");
     scanf("%d", &c);
 
-    if (a==b && b==c)
+    if (a==b && a==c && b==c)
     {
 
-       pf("All three numbers are equal :%d");
+       pf("All three numbers are equal!!");
 
     }
 
-    else if (a==b || a==c)
+    else if (a==b || a==c || b==c)
     {
 
-       pf("Both numbers are equal :%d");
+       pf("Both numbers are equal!!!");
 
     }
 
@@ -39,14 +39,14 @@ main()
        if (a>c)
        {
 
-	  pf("The maximum value is : %d", a);
+	  pf("The maximum number is : %d", a);
 
        }
 
        else
        {
 
-	  pf("The maximum value is : %d", c);
+	  pf("The maximum number is : %d", c);
 
        }
 
@@ -60,7 +60,7 @@ main()
 	 if (b>c)
 
 	{
-	  pf("The maximum value is : %d", b);
+	  pf("The maximum number is : %d", b);
 
 	}
 
@@ -68,7 +68,7 @@ main()
 
        {
 
-	  pf("The maximum value is : %d", c);
+	  pf("The maximum number is : %d", c);
 
 
        }

@@ -23,7 +23,7 @@ main()
   scanf("%f",&TA);
 
   Gross = Base + (HRA/100) + (DA/100) + (TA/100);
-  printf("Gross salary = ", Gross);
+  printf("Gross salary =%f", Gross);
 
   getch();
 

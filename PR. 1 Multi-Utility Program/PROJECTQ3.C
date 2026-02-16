@@ -1,4 +1,4 @@
-0include <stdio.h>
+#include <stdio.h>
 #include <conio.h>
 
 
@@ -6,23 +6,20 @@ main()
 
 {
 
- float first,second,third;
+      float first, second, third;
 
- clrscr();
+      clrscr();
 
- printf("Enter first angle =");
- scanf("%f",&first);
+      printf("Enter First Angle =");
+      scanf("%f", &first);
 
- printf("Enter second angle =");
- scanf("%f",&second);
+      printf("Enter Second Angle =");
+      scanf("%f", &second);
 
- printf("enter third angle =");
- scanf("%f",&third);
+      third = 180 - (first + second);
 
- third = 180 - (first + second);
+      printf("Third Angle of right triangle = %f", third);
 
- printf("Third angleof right triangle =", third);
-
- getch();
+      getch();
 
 }
