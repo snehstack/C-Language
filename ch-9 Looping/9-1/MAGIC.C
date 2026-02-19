@@ -5,27 +5,29 @@ main()
 
 {
 
-	int n, mag, rem, sum = 0;
+	int n, rem, sum;
 
 	clrscr();
 
 	printf("Enter Any Number:");
 	scanf("%d", &n);
 
-	mag = n;
-
-	while (n != 0)
+	while (n > 9)
 	{
+	   sum = 0;
 
+	   while (n !=0)
+	{
 	   rem = n % 10;
-	   sum = sum + (rem * rem * rem);
+	   sum = sum + rem;
 	   n = n / 10;
 
 	}
 
-	printf("Sum : %d\n", sum);
+	   n = sum;
+       }
 
-	if (mag == sum)
+	if (n == 1)
 	   printf("This is Magic Number!!\n");
 
 	else
