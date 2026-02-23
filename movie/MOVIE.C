@@ -55,6 +55,7 @@ main()
 					printf("\n\t3. Mission Impossible - Fallout");
 					printf("\n\t4. Avengers: Endgame");
 					printf("\n\t5. Mad Max: Fury Road");
+					printf("\n\tEnter Your Choice :");
 					scanf("%d", &movie);
 					switch (movie)
 					{
@@ -274,6 +275,7 @@ main()
 					printf("\n\t3. Fakt Mahilao Maate");
 					printf("\n\t4. Shu Thayu");
 					printf("\n\t5. Carry On Kesar");
+					printf("\n\tEnter Your Choice :");
 					scanf("%d", &movie);
 					switch (movie)
 					{
@@ -388,6 +390,7 @@ main()
 					printf("\n\t3. Leo");
 					printf("\n\t4. RRR");
 					printf("\n\t5. Vikram");
+					printf("\n\tEnter Your Choice :");
 					scanf("%d", &movie);
 					switch (movie)
 					{
@@ -548,12 +551,10 @@ main()
 	netamount = subtotal + cgst + sgst;
 
 	clrscr();
-       /* printf("\n\n\t======================================");
-	printf("\n\n\t-------    RAJHANS CINEMA     -------");
-	printf("\n\n\t--------------------------------------");  */
-	clrscr();
-	textcolor(GREEN);
-	cprintf("\n\n        WELCOME TO RAJHANS CINEMAS ");
+	printf("\n\n\t======================================");
+	printf("\n\n\t--------   RAJHANS CINEMA     --------");
+	printf("\n\n\t======================================");
+
 	textcolor(WHITE);
 	printf("\n\n\tCustomer Name : %s", name);
 	printf("\n\tTickets       : %d", tickets);
@@ -563,7 +564,8 @@ main()
 	printf("\n\tSGST (9%%)     : %.2f", sgst);
 	printf("\n\n\t--------------------------------------");
 	printf("\n\tNet Amount    : %.2f", netamount);
-	printf("\n\tStatus        : CONFIRMED");
+	printf("\n\tBooking Status : SUCCESSFUL");
+	printf("\n\tEnjoy Your Movie!!!");
 	printf("\n\n\t--------------------------------------");
 	getch();
 
