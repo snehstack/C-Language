@@ -13,7 +13,7 @@ main()
     int a[row][col];
 
 
-    printf("\n\nEnter Array elements\n\n");
+    printf("\n\nEnter Array elements :\n\n");
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
@@ -25,32 +25,33 @@ main()
     }
 
 
-    int row,col = 0;
+    int r, c;
+    int sum = 0;
 
-    printf("\n\nsum of each row\n\n");
-    for (int i = 0; i < row; i++)
-    {
+    printf("Enter row number:");
+    scanf("%d", &r);
+
+
+    printf("Row elements : ");
+
         for (int j = 0; j < col; j++)
         {
-            printf("Enter a [%d] [%d] :", i, j);
-            scanf("%d", &b[i][j]);
+            printf("%d ", a[r][j]);
+            sum +=a[r][j];
         }
-        printf("\n");
-    }
+        printf("\nSum  of row = %d\n", sum);
+    
 
+    printf("Enter column number:");
     for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
+     
         {
-            sum [i] [j] = a [i] [j] + b [i] [j];
+             printf("%d ", a[i][c]);
+            sum += a[i][c];
         }
-        printf("\n");
-    }
+        printf("\nSum of column = %d\n", sum);
+    
+    
+      
 
-    printf("\n\n1st Array Output\n\n");
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < col; j++)
-        {
-            printf("%d\t", a [i] [j]);
-}
+}    
