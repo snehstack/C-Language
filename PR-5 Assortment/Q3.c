@@ -10,6 +10,7 @@ main ()
     scanf("%d", &col);
 
     int a [row] [col];
+    
     printf("\n\nEnter array elements :\n\n");
     for (int i = 0; i < row; i++)
     {
