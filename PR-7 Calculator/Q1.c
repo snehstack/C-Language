@@ -40,13 +40,19 @@ int main()
         printf("\nPress 3 for *");
         printf("\nPress 4 for /");
         printf("\nPress 5 for %%");
-
+        printf("\nPress 0 for exit");
 
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
 
-   
-        
+        if (choice == 0)
+        {   
+
+          printf("Exiting program...");
+          break;
+         
+        }
+
         printf("\n");
         printf("Enter the first number: ");
         scanf("%d", &num1);
